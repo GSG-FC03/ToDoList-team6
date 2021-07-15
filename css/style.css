@@ -1,0 +1,10 @@
+.result{
+    text-align: start;
+    margin: 30px 110px 20px 0px;
+    
+}
+.result h3, p{
+text-align: start;
+margin: 2px 0px 0px 12.5%;
+padding: 5px ;
+}
