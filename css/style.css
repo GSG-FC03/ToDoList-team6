@@ -1,0 +1,30 @@
+/* EDIT && DELETE  */
+footer{
+    background-color: white;
+    margin-left: 10%;
+    height: 10vh;
+    width: 80%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    
+}
+#del-btn ,#edit-btn{
+    height: 5vh;
+    width: 50px;
+    border: none;
+    margin: 15px;
+    background-color: crimson;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    width: 150px;
+}
+
+#edit-btn{
+    background-color: grey;
+}
+/* EDIT && DELETE  */
