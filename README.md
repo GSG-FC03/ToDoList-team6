@@ -12,12 +12,10 @@ You can use To Do LIST to make shopping lists or task lists, take notes, plan an
 
 # User stories (purpose)
 
-- Add an infinite number of lists, list items, or notes.
-- Edit, update, copy, complete, or delete your lists or notes.
-- Offline mode is supported.
-- Built to be an easy-to-use list maker.
-- Daily organizer personalized with bold and colorful backgrounds.
-- Reminders with one-time or recurring due dates.
-- Make task lists and switch between school, work, and personal lists.
+- As a user, I should be able to Add an infinite number of lists, list items, or notes.
+- As a user, I should be able to Edit, update, copy, complete, or delete  lists or notes.
+- As a user, I should be able to remove any to-do from my list (remove it from local storage)
+- As a user, I can still have my list even if I close the browser window
+- As a user, I can still have my list even if Offline mode is supported.
 
 
