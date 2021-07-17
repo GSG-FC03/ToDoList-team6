@@ -18,24 +18,23 @@
   <!-- header titile -->
   <!-- ADD BOX -->
   <section class="add-box">
-      <input type="text" id="input-text" placeholder="write your ToDos here"> 
-      <input type="text" id="input-key" placeholder="Key">
-      <input type="button" id="btnAdd" value="Add">
+      <input type="text" id="todos" placeholder="write your ToDos here"> 
+      <input type="button" id="add-todos" value="Add">
+      <input type="button" value="Save changes" id="save-btn">
+      <input type="hidden" name="" id="save-index">
   </section>
   <!-- ADD BOX -->
 <!-- TODOS BOX -->
-  <article class="result"> 
-<!-- <h3>Key1</h3>  -->
-<!-- <p> Hello1 date:2/7</p>  -->
+  <article id="get-result"> 
+
   </article> 
-  
+
 <!-- TODOS BOX -->
-<!-- EDIT && DELETE BOX -->
+<!--DELETE all BOX -->
   <footer> 
-      <input type="button" value="delete" id="del-btn"> 
-      <input type="button" value="edit" id="edit-btn"> 
+      <input type="button" value="delete" id="clear-all"> 
   </footer>
-<!-- EDIT && DELETE BOX -->
+<!--DELETE all BOX -->
 
   <script src="/JS/main.js"></script>
 
