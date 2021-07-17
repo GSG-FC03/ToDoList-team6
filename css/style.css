@@ -25,19 +25,14 @@ margin: -40px 30px 30px 30px;
     box-shadow: 0px 1px 4px 1px crimson;
     border-radius: 5px;
 }
-#input-key {
-  height: 30px;
-  width: 50px;
-  margin: 0 5px;
-  border: none;
-}
-#input-text {
+
+#todos{
   height: 30px;
   width: 150px;
   margin: 0 5px;
   border: none;
 }
-#btnAdd {
+#add-todos{
     height: 30px;
   width: 50px;
   margin: 0 10px;
@@ -48,13 +43,16 @@ margin: -40px 30px 30px 30px;
   background-color: crimson;
   border: none;
 }
-.result{
+#get-result{
     text-align: start;
     margin: 30px 110px 20px 0px;
     
 }
-.result h3, p{
+#get-result h3, p{
 text-align: start;
 margin: 2px 0px 0px 12.5%;
 padding: 5px ;
+}
+#save-btn{
+  display: none;
 }
