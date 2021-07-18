@@ -7,6 +7,7 @@ let saveIndex = document.getElementById("save-index")
 let clearAll = document.getElementById("clear-all");
 
 // declareing the variabale 
+
 // add event lisener to the (add) button 
 // explanation "when the user click on add its take the input value and assign it to array in localstorage withe the same key and every time you clicked add btn and write any value in the input it push it to the same array "
 addTodo.addEventListener('click', () => {
@@ -51,3 +52,24 @@ getTodo.innerHTML = finalTodo;
 
 }
 // end of show TO-DOS function
+// How the edit button works: when a user clicks on the edit button, the value and show on the input felid and then the save button will show next to the add button and the add button will get disabled
+function editTodo(i){
+    let toDoTask = localStorage.getItem("localtodo");
+    saveIndex.value = i;
+    let todoObj = JSON.parse(toDoTask);
+    todoInp.value = todoObj[i];
+    saveBtn.style.display = "block";
+    addTodo.setAttribute("disabled", true)
+    };
+
+    saveBtn.addEventListener('click', ()=> {
+        let toDoTask = localStorage.getItem("localtodo");
+        let todoObj = JSON.parse(toDoTask);
+        let savedIndex = saveIndex.value;
+        todoObj[savedIndex] = todoInp.value;
+        localStorage.setItem("localtodo", JSON.stringify(todoObj));
+        showTodo();
+        addTodo.removeAttribute("disabled",false)
+        saveBtn.style.display = "none"; 
+        })
+        // end of the edit function
