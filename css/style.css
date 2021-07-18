@@ -74,3 +74,48 @@ margin: -40px 0px 30px 5%;
 text-align: start;
 margin: 20px
 }
+
+.icons{
+  display: flex;
+  justify-content: right;
+  align-items: flex-start;
+  margin-left:282px ;
+ 
+ }
+ #del-icon{
+     color: crimson;
+     margin-left: 10px;
+     margin-right: 20px;
+     margin-top: -60px;
+     font-size: 20px;
+ }
+ #edit-icon{
+     color: grey;
+     margin-top: -60px;
+     font-size: 20px;
+ }
+ footer{
+      background-color: white;
+      margin-left: 5%;
+      height: 10vh;
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+      border: none;
+      border-radius: 5px;
+ }
+ 
+ #clear-all{
+     border: none;
+     color: white;
+     font-size: 15px;
+     padding: 10px;
+     font-weight: bold;
+     background-color:crimson;
+     border-radius: 5px;
+     width: auto;
+     height: 5vh;
+     margin: 5px;
+ }
