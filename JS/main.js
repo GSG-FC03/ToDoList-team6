@@ -51,3 +51,15 @@ getTodo.innerHTML = finalTodo;
 
 }
 // end of show TO-DOS function
+
+
+//function for delete All DO-TOs:How the delete all button works:
+//  when a user clicks on the delete all button, it deletes all the 'To-dos' he created. 
+
+clearAll.addEventListener("click", () => {
+  localStorage.clear();
+  showTodo();
+  saveBtn.style.display = "none";
+});
+
+// end function
