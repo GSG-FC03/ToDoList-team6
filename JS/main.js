@@ -1,10 +1,11 @@
 // declareing the variabale
 const todoInp = document.getElementById("todos");
 const addTodo = document.getElementById("add-todos");
-const getTodo = document.querySelector(".get-result");
+const getTodo = document.querySelector("#get-result");
 const saveBtn = document.getElementById("save-btn");
 let saveIndex = document.getElementById("save-index");
 let clearAll = document.getElementById("clear-all");
+
 
 // declareing the variabale
 // add event lisener to the (add) button
@@ -22,11 +23,15 @@ addTodo.addEventListener("click", () => {
     todoObj.push(todoInpVal);
     localStorage.setItem("localtodo", JSON.stringify(todoObj));
   }
+  showTodo();
+
   location.reload();
 });
 //end of the  add event lisener to the (add) button
 
+showTodo();
 // show TO-DOs
+
 function showTodo() {
   let toDoTask = localStorage.getItem("localtodo");
   toDoTask == null ? (todoObj = []) : (todoObj = JSON.parse(toDoTask));
@@ -42,9 +47,11 @@ function showTodo() {
 <i class="far fa-edit" id="edit-icon" onclick="editTodo(${index})"></i>
 
 </div>
-<br>
+<hr>
 `;
   });
+
+
   getTodo.innerHTML = finalTodo;
 }
 // end of show TO-DOS function
@@ -56,6 +63,7 @@ function editTodo(i){
     let todoObj = JSON.parse(toDoTask);
     todoInp.value = todoObj[i];
     saveBtn.style.display = "block";
+    addTodo.style.display="none";
     addTodo.setAttribute("disabled", true)
     };
 
@@ -67,7 +75,8 @@ function editTodo(i){
         localStorage.setItem("localtodo", JSON.stringify(todoObj));
         showTodo();
         addTodo.removeAttribute("disabled",false)
-        saveBtn.style.display = "none"; 
+        saveBtn.style.display = "none";
+        location.reload();
         })
 // end of the edit function
 
