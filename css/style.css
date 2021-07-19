@@ -119,3 +119,54 @@ margin: 20px
      height: 5vh;
      margin: 5px;
  }
+
+ /* medium */
+ @media (min-width: 992px) {
+    header{
+        height: 30vh;
+
+    }
+    header h1{
+     padding: 65px;
+     text-align: center;
+     letter-spacing: .2rem;
+     font-size: 40px;
+    }
+    .get-result {
+       margin-left: 32%;
+
+        }
+        .add-box{
+            margin-top: -40px;
+            margin-left: 25%;
+            margin-bottom: 30px;
+            height: 15vh;
+            width: 50%;
+        }
+        #todos{
+            font-size: 18px;
+            padding: 20px;
+            height: 10vh;
+
+        }
+        #add-todos{
+            font-size: 18px;
+            padding: 20px;
+            height: 10vh;
+
+        }
+        #save-btn{
+            font-size: 18px;
+            padding: 20px;
+            height: 10vh;
+            display: none;
+        }
+        #clear-all{
+            font-size: 18px;
+            padding: 20px;
+            height: 10vh;
+        }
+        hr{
+            width: 370px;
+        }
+  }
