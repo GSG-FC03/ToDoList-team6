@@ -121,6 +121,12 @@ margin: 20px
      margin: 5px;
  }
 
+hr{
+  width: 80%;
+  margin-left : 75px;
+ 
+}
+
 
  /* Large */
  @media (min-width: 1200px) {
@@ -188,7 +194,7 @@ margin: 20px
      letter-spacing: .2rem;
      font-size: 40px;
     }
-    .get-result {
+    #get-result {
        margin-left: 32%;
 
         }
@@ -203,6 +209,7 @@ margin: 20px
             font-size: 18px;
             padding: 20px;
             height: 10vh;
+            width: auto;
 
         }
         #add-todos{
@@ -226,10 +233,7 @@ margin: 20px
             width: 370px;
         }
   }
-hr{
-  width: 80%;
-  margin-left: 35px;
-}
+
 /* Small */
 @media (min-width: 614px) {
   header{
@@ -257,6 +261,7 @@ hr{
            font-size: 18px;
            padding: 20px;
            height: 10vh;
+           width: auto;
 
        }
        #add-todos{
@@ -278,5 +283,6 @@ hr{
        }
        hr{
            width: 370px;
+            background-color: crimson;
        }
 }
